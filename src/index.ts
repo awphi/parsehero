@@ -1,6 +1,5 @@
 import { mid2Chart } from "./mid2chart";
-import { parseChartString } from "./parser";
-import { difficulties, instruments } from "./utils";
+import { parseChartString, difficulties, instruments } from "./parser";
 
 export interface TickEvent {
   tick: number;

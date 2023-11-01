@@ -1,16 +1,5 @@
 import type { Bpm, TickEvent, Timed } from "./index";
 
-export const difficulties = ["Easy", "Medium", "Hard", "Expert"] as const;
-// TODO add support for more instrument types
-export const instruments = [
-  "Single",
-  "DoubleBass",
-  "DoubleRhythm",
-  "Keyboard",
-  "DoubleGuitar",
-  "Vocals",
-] as const;
-
 export function disToTime(
   tickStart: number,
   tickEnd: number,

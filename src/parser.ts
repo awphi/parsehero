@@ -1,9 +1,4 @@
-import {
-  difficulties,
-  getTimedBpms,
-  getTimedTrack,
-  instruments,
-} from "./utils";
+import { getTimedBpms, getTimedTrack } from "./utils";
 import {
   type Bpm,
   type Instrument,
@@ -28,6 +23,17 @@ type SectionParser = (
   bpms: ParsedChart["SyncTrack"]["bpms"],
   warns: string[]
 ) => NonNullable<ParsedChart[keyof Omit<ParsedChart, "Song" | "SyncTrack">]>;
+
+export const difficulties = ["Easy", "Medium", "Hard", "Expert"] as const;
+// TODO add support for more instrument types
+export const instruments = [
+  "Single",
+  "DoubleBass",
+  "DoubleRhythm",
+  "Keyboard",
+  "DoubleGuitar",
+  "Vocals",
+] as const;
 
 const requiredSections = ["Song", "SyncTrack"];
 const sectionTitleRegex = /^\[(.+)\]$/;
