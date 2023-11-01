@@ -1,0 +1,29 @@
+{
+  "name": "parsehero",
+  "version": "0.0.1",
+  "author": "awphi",
+  "exports": {
+    ".": "./dist/index"
+  },
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "description": "A permissive parser for .midi files & .chart files from Clone Hero and Guitar Hero games.",
+  "keywords": [
+    "guitarhero",
+    "clonehero",
+    "chart",
+    "parser",
+    "json"
+  ],
+  "dependencies": {
+    "midi-file": "^1.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.3"
+  }
+}
