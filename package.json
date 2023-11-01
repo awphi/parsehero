@@ -5,6 +5,7 @@
   "exports": {
     ".": "./dist/index"
   },
+  "main": "./dist/index",
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
