@@ -54,6 +54,7 @@ const defaultOptions: Required<Mid2ChartOptions> = {
   omitEmptySections: true,
 };
 
+// TODO tidy up this mess once we've got a test suite in place
 export function mid2Chart(
   buf: ArrayBuffer,
   warns: string[],
