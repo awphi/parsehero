@@ -11,7 +11,7 @@
   "scripts": {
     "build": "vite build",
     "test": "vitest",
-    "prepare": "pnpm test"
+    "prepare": "vitest run"
   },
   "files": [
     "dist/**"
