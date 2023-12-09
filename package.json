@@ -1,6 +1,6 @@
 {
   "name": "parsehero",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "awphi",
   "exports": {
     ".": "./dist/index"
@@ -10,8 +10,9 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "test": "vitest",
-    "prepare": "vitest run"
+    "test": "vitest run",
+    "test:dev": "vitest",
+    "prepare": "pnpm build && pnpm test"
   },
   "files": [
     "dist/**"
